@@ -8,10 +8,51 @@
     --tipog: font-family: 'Roboto', sans-serif;
 }
 
-body {
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+header {
     background-color: var(--Amarillo);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logoo {
+    height: 50%;
+}
+
+.titulos1{
+    display: flex;
+    justify-content: left;
+    
+}
+
+nav {
+    height: 50%;
+}
+
+body {
+    background-color: var(--Gris-claro);
     font-family: 'Roboto', sans-serif;
     color: black;
+}
+
+.lista1 {display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.lista2 {display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
 .burger-menu {text-align: center;
@@ -20,19 +61,44 @@ body {
 
 }
 #precio { font-size: 18px;
-    font-style: inherit;
+    text-decoration: dashed;
+    padding: 0.5px;
+    
 }
 
-#descuentos { font-size: 16px
+
+
+.fa-solid{
+    color: var(--Verde);
+    display:block;
+    padding: 5%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    right: 100px;
+    top: -15px;
 
 }
 
-#descripciones { font-size: 16px
+#descuentos { font-size: 16px;
+    color: var(--Verde);
+    padding: 1px;;
+
+}
+
+#des { color: var(--Gris-oscuro);
+
+}
+
+#descripciones { font-size: 50px
 
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 40px;
+
+    margin: 30px;
 }
 
 .titulo {text-align:center;
@@ -48,27 +114,68 @@ h2 {
     background-color: var(--Celeste);
 }
 
-ul { text-decoration: none;
+a { text-decoration: none;
+    color: black;
 }
 
 main {text-align: center;
-    width: 90wr;
+    align-content: center;
+    width: 90%;
+    box-sizing: border-box;
+    }
+
+img { width: 95%;
+    align-items: center;
 
 }
 
 article {
-        margin: 100px;
-        padding: 10px;
-        margin-top: 10%;
-        box-sizing: border-box;
-        }
+    border-top: solid 1px #ebebeb;
+    padding: 10px;
+    margin: 10px;
+}
 
-section.img { background-color: #ebebeb;
-    width: 50.5rem;
-    height: 50.4rem;
-    
+.card { background-color: white;
+    width: 80%;
+    align-content: center;
+    border-color: #39b54a;
     padding: 15px;
-    box-sizing: border-box;
-
 
 }
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ofertas {
+    display: flex;
+}
+    
+@media (max-width: 361px){
+    #des { display: none;
+        }
+    ul { display: none;}
+    nav {display: none;}
+    section {
+        flex-wrap: wrap;
+    }
+     
+    }
+    
+
+@media (min-width: 769px){
+    .card {
+         box-shadow: 6px 10px 5px -7px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 10px 5px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 10px 5px -7px rgba(0,0,0,0.75);
+       }
+    
+    .products{
+        width: 100%;
+    }
+
+    }
+    
+    span {display: none; }
+    
